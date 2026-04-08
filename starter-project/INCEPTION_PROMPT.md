@@ -10,7 +10,7 @@ Stack (with rationale):
 - Tailwind CSS - fast, consistent styling with low overhead during workshop builds.
 - shadcn/ui - accessible, composable UI primitives so we can ship usable screens quickly without custom component churn.
 - Prisma ORM - readable schema + migration workflow for teaching database evolution.
-- PostgreSQL via Docker Compose - reproducible local environment and fewer "works on my machine" issues.
+- SQLite (via Prisma datasource) - zero extra database install for class while still teaching relational modeling and migrations.
 - Zod for validation - runtime safety at API boundaries for correctness and security.
 - Vitest (or Jest if easier in scaffold) for tests - fast feedback loop to verify behavior and catch regressions.
 
@@ -33,19 +33,17 @@ Technical requirements:
 - Use Prisma migrations (`npx prisma migrate dev`)
 - Add at least one follow-up migration after init
 - Provide seed data script
-- Add `docker-compose.yml` and `.env.example`
+- Add `.env.example` (if needed) and document local DB location (for example `prisma/dev.db`)
 - Return consistent error responses
 
 Bootstrap commands to run and verify:
-1) `docker compose up -d`
-2) `npm install`
-3) `npx prisma migrate dev --name init`
-4) `npx prisma migrate dev --name add_billable_flag`
-5) `npm run dev`
+1) `npm install`
+2) `npx prisma migrate dev --name init`
+3) `npx prisma migrate dev --name add_billable_flag`
+4) `npm run dev`
 
 Definition of done checklist:
 - App runs locally
-- Postgres container is healthy
 - Migrations apply cleanly
 - Seed data loads
 - Project and time-entry flows work

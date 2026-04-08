@@ -13,7 +13,7 @@ Build and ship a working **timesheet tracker** where a user can:
 - View entries for a selected week
 - See total hours per project
 
-Use **Next.js + Prisma + Postgres (Docker Compose)** with migration-driven schema changes.
+Use **Next.js + Prisma + SQLite** with migration-driven schema changes.
 
 ---
 
@@ -27,7 +27,7 @@ You are my senior full-stack pair programmer. Bootstrap a production-style MVP c
 Stack:
 - Next.js 14+ with TypeScript and App Router
 - Prisma ORM
-- PostgreSQL running via Docker Compose
+- SQLite via Prisma datasource
 - Zod for request validation
 - Minimal UI with server/client components as needed
 
@@ -46,8 +46,7 @@ Requirements:
 7) Seed sample data
 
 Deliverables:
-- `docker-compose.yml` for postgres
-- `.env.example` and `.env` (DATABASE_URL)
+- `.env.example` (if needed for app settings)
 - Prisma schema in `prisma/schema.prisma`
 - Initial migration
 - Seed script
@@ -68,7 +67,7 @@ Quality guardrails:
 Execution protocol:
 1) Propose file plan first
 2) Implement files
-3) Run and report: `docker compose up -d`, `npm install`, `npx prisma migrate dev --name init`, `npm run dev`
+3) Run and report: `npm install`, `npx prisma migrate dev --name init`, `npm run dev`
 4) If command fails, fix and retry
 5) End with a checklist proving each requirement is met
 ```
@@ -91,7 +90,7 @@ Save as `REQUIREMENT.md`.
 
 Ask:
 
-> Draft ADR-001 for "Prisma + Postgres via Docker Compose for local development." Include alternatives and trade-offs.
+> Draft ADR-001 for "Prisma + SQLite for workshop development." Include alternatives and trade-offs, plus a migration path to Postgres for production use.
 
 Save as `ADR-001.md`.
 
@@ -104,7 +103,6 @@ Use the inception prompt to scaffold and implement.
 Run:
 
 ```bash
-docker compose up -d
 npm install
 npx prisma migrate dev --name init
 npx prisma migrate dev --name add_billable_flag

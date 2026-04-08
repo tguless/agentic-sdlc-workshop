@@ -97,20 +97,11 @@ npm --version
 
 Both should return version numbers.
 
-### 6. Docker Desktop (Free)
+### 6. Optional: SQLite Browser (Optional, Nice to Have)
 
-We will run PostgreSQL locally using Docker Compose during the workshop.
+No separate database server install is required for class. We will use SQLite through Prisma (file-based local database).
 
-- Download and install Docker Desktop: <https://www.docker.com/products/docker-desktop/>
-- Start Docker Desktop and make sure it is running before class.
-- Verify installation by running:
-
-```bash
-docker --version
-docker compose version
-```
-
-Both commands should return version numbers.
+- Optional tool if you want to inspect DB files visually: <https://sqlitebrowser.org/>
 
 ---
 
@@ -138,8 +129,7 @@ Run through this checklist the night before:
 - [ ] Copilot generates suggestions when you type code (test with a `.ts` or `.tsx` file)
 - [ ] `git --version` returns a version number in your terminal
 - [ ] `node --version` returns a version number
-- [ ] `docker --version` and `docker compose version` return version numbers
-- [ ] Docker Desktop launches successfully
+- [ ] `npm --version` returns a version number
 - [ ] Laptop is charged / charger is packed
 
 ---
@@ -159,10 +149,9 @@ Run through this checklist the night before:
 - Restart your terminal after installation
 - On Windows, use the "Node.js command prompt" that was installed with Node
 
-**Docker commands not found or database won't start:**
-- Make sure Docker Desktop is installed and fully running
-- Restart Docker Desktop, then rerun `docker compose up -d`
-- On Windows, confirm Docker Desktop completed backend setup (WSL2/Hyper-V prompt)
+**Can Copilot install Node.js for me during class?**
+- Copilot can guide you step-by-step, but the installation itself still requires you to run the installer and complete OS prompts
+- Please install Node.js before class if possible to avoid setup delays
 
 **Need help?**
 If you run into issues, email the workshop coordinator before the session. Arrive 15 minutes early if you need last-minute help.

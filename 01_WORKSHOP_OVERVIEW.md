@@ -86,7 +86,7 @@ By the end of this workshop, students will be able to:
 Students build and extend a **Next.js timesheet tracker** using the full agentic workflow:
 1. Write the requirement (with AI assistance)
 2. Generate an architecture sketch (with AI)
-3. Implement the code with local Postgres + migrations (with Copilot)
+3. Implement the code with local SQLite + migrations (with Copilot)
 4. Generate and run tests (with AI)
 5. Conduct a self-review using AI as first-pass reviewer
 6. Document the decision in an ADR

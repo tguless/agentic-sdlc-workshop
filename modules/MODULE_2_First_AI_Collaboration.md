@@ -11,13 +11,13 @@ Before we begin, confirm:
 - VS Code is open
 - GitHub Copilot extension is installed and signed in
 - You can open Copilot Chat (`Ctrl+Shift+I` / `Cmd+Shift+I`)
-- Docker Desktop is running
+- Node.js is installed and available in terminal (`node --version`)
 
 ---
 
 ## Exercise 1: Inception Prompt Bootstrap (10 min)
 
-**Goal:** Use one high-quality prompt to scaffold a full-stack Next.js app with local Postgres and migrations.
+**Goal:** Use one high-quality prompt to scaffold a full-stack Next.js app with local SQLite and migrations.
 
 ### Steps
 
@@ -28,7 +28,7 @@ Before we begin, confirm:
 2. Let Copilot execute the bootstrap plan:
 - Create Next.js app (TypeScript + App Router)
 - Add Prisma
-- Add Docker Compose for Postgres
+- Configure Prisma for SQLite
 - Configure `.env`
 - Create first migration and seed script
 - Start app and verify health
@@ -36,7 +36,6 @@ Before we begin, confirm:
 3. Verify commands run successfully:
 
 ```bash
-docker compose up -d
 npm install
 npx prisma migrate dev --name init
 npm run dev

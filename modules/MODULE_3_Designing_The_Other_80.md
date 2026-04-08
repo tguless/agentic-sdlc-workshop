@@ -50,7 +50,7 @@ Pattern for every exercise:
 
 Ask Copilot:
 
-> Draft an ADR for this decision: "Use Prisma migrations with PostgreSQL in Docker Compose for local development." Include context, decision, alternatives (Drizzle, raw SQL), consequences, and operational guardrails for shared environments.
+> Draft an ADR for this decision: "Use Prisma migrations with SQLite for workshop development (with a future path to Postgres in production)." Include context, decision, alternatives (Postgres + Docker, Drizzle, raw SQL), consequences, and migration guardrails.
 
 Then ask:
 
