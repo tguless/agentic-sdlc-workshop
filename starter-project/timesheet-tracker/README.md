@@ -47,7 +47,7 @@ Open `http://localhost:3000`.
 ## Database Location
 
 - SQLite file: `prisma/dev.db`
-- Environment variable: `DATABASE_URL="file:./prisma/dev.db"` in `.env`
+- Environment variable: `DATABASE_URL="file:./dev.db"` in `.env`
 - Example env file: `.env.example`
 
 ## Useful Commands
