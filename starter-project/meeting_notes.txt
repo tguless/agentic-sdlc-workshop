@@ -1,0 +1,15 @@
+Meeting notes - timesheet tracking kickoff
+- Need a timesheet app for consultants logging hours across multiple projects
+- PM wants weekly view by default (Monday-Sunday)
+- Finance needs billable vs non-billable split by project
+- Ops wants CSV export by pay period, maybe phase 2
+- Should we allow editing old entries? maybe locked after payroll closes
+- Team asked if entries crossing midnight are supported
+- Need to prevent duplicate entries for same user/project/time block
+- Security asked for role checks before viewing team-level reports
+- Deadline: MVP demo in 3 weeks
+- Backend can own API routes and database schema
+- Frontend can deliver minimal UI this sprint, polish later
+- Open question: timezone standard (local vs UTC storage/display)
+- Product asked for optional notes field for each time entry
+- Reminder: must document migration strategy for schema changes
