@@ -13,6 +13,7 @@ Stack (with rationale):
 - SQLite (via Prisma datasource) - zero extra database install for class while still teaching relational modeling and migrations.
 - Zod for validation - runtime safety at API boundaries for correctness and security.
 - Vitest (or Jest if easier in scaffold) for tests - fast feedback loop to verify behavior and catch regressions.
+- We want ot make sure if we want each page to have own social media sharing icon we can do it, meaning we want to be able to accomodate server generated pages. 
 
 Core entities:
 - User: id, email, displayName
